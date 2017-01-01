@@ -1,2 +1,3 @@
 {"description": "reject booleans as document versions", "expected_error": true, "id": "index-0000", "input": {"events": [{"document": {"category": "reference", "title": "Sample 0"}, "id": "doc-0", "op": "upsert", "version": true}]}}
 {"description": "reject zero-valued document versions", "expected_error": true, "id": "index-0001", "input": {"events": [{"document": {"category": "reference", "title": "Sample 1"}, "id": "doc-1", "op": "upsert", "version": 0}]}}
+{"description": "reject unsupported index operations", "expected_error": true, "id": "index-0002", "input": {"events": [{"document": {"category": "reference", "title": "Sample 2"}, "id": "doc-2", "op": "merge", "version": 1}]}}
