@@ -1,0 +1,1 @@
+{"description": "reject booleans as document versions", "expected_error": true, "id": "index-0000", "input": {"events": [{"document": {"category": "reference", "title": "Sample 0"}, "id": "doc-0", "op": "upsert", "version": true}]}}
