@@ -27,3 +27,4 @@
 {"description": "reject unsupported index operations", "expected_error": true, "id": "index-0026", "input": {"events": [{"document": {"category": "reference", "title": "Sample 26"}, "id": "doc-26", "op": "merge", "version": 1}]}}
 {"description": "reject non-object document payloads", "expected_error": true, "id": "index-0027", "input": {"events": [{"document": "not-an-object", "id": "doc-27", "op": "upsert", "version": 1}]}}
 {"description": "reject blank document identifiers", "expected_error": true, "id": "index-0028", "input": {"events": [{"document": {"category": "reference", "title": "Sample 28"}, "id": " ", "op": "upsert", "version": 1}]}}
+{"description": "reject unexpected payloads on delete events", "expected_error": true, "id": "index-0029", "input": {"events": [{"document": {"category": "reference", "title": "Sample 29"}, "id": "doc-29", "op": "delete", "version": 1}]}}
