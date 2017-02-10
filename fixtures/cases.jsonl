@@ -37,3 +37,4 @@
 {"description": "reject booleans as document versions", "expected_error": true, "id": "index-0036", "input": {"events": [{"document": {"category": "reference", "title": "Sample 36"}, "id": "doc-36", "op": "upsert", "version": true}]}}
 {"description": "reject zero-valued document versions", "expected_error": true, "id": "index-0037", "input": {"events": [{"document": {"category": "reference", "title": "Sample 37"}, "id": "doc-37", "op": "upsert", "version": 0}]}}
 {"description": "reject unsupported index operations", "expected_error": true, "id": "index-0038", "input": {"events": [{"document": {"category": "reference", "title": "Sample 38"}, "id": "doc-38", "op": "merge", "version": 1}]}}
+{"description": "reject non-object document payloads", "expected_error": true, "id": "index-0039", "input": {"events": [{"document": "not-an-object", "id": "doc-39", "op": "upsert", "version": 1}]}}
