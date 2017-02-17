@@ -40,3 +40,4 @@
 {"description": "reject non-object document payloads", "expected_error": true, "id": "index-0039", "input": {"events": [{"document": "not-an-object", "id": "doc-39", "op": "upsert", "version": 1}]}}
 {"description": "reject blank document identifiers", "expected_error": true, "id": "index-0040", "input": {"events": [{"document": {"category": "reference", "title": "Sample 40"}, "id": " ", "op": "upsert", "version": 1}]}}
 {"description": "reject unexpected payloads on delete events", "expected_error": true, "id": "index-0041", "input": {"events": [{"document": {"category": "reference", "title": "Sample 41"}, "id": "doc-41", "op": "delete", "version": 1}]}}
+{"description": "replay an empty index event collection", "expected": {"documents": [], "results": [], "versions": []}, "id": "index-0042", "input": {"events": []}}
