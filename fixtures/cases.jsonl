@@ -124,3 +124,4 @@
 {"description": "reject non-object document payloads", "expected_error": true, "id": "index-0123", "input": {"events": [{"document": "not-an-object", "id": "doc-123", "op": "upsert", "version": 1}]}}
 {"description": "reject blank document identifiers", "expected_error": true, "id": "index-0124", "input": {"events": [{"document": {"category": "reference", "title": "Sample 124"}, "id": " ", "op": "upsert", "version": 1}]}}
 {"description": "reject unexpected payloads on delete events", "expected_error": true, "id": "index-0125", "input": {"events": [{"document": {"category": "reference", "title": "Sample 125"}, "id": "doc-125", "op": "delete", "version": 1}]}}
+{"description": "replay an empty index event collection", "expected": {"documents": [], "results": [], "versions": []}, "id": "index-0126", "input": {"events": []}}
