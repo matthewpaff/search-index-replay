@@ -206,3 +206,4 @@
 {"description": "reject zero-valued document versions", "expected_error": true, "id": "index-0205", "input": {"events": [{"document": {"category": "reference", "title": "Sample 205"}, "id": "doc-205", "op": "upsert", "version": 0}]}}
 {"description": "reject unsupported index operations", "expected_error": true, "id": "index-0206", "input": {"events": [{"document": {"category": "reference", "title": "Sample 206"}, "id": "doc-206", "op": "merge", "version": 1}]}}
 {"description": "reject non-object document payloads", "expected_error": true, "id": "index-0207", "input": {"events": [{"document": "not-an-object", "id": "doc-207", "op": "upsert", "version": 1}]}}
+{"description": "reject blank document identifiers", "expected_error": true, "id": "index-0208", "input": {"events": [{"document": {"category": "reference", "title": "Sample 208"}, "id": " ", "op": "upsert", "version": 1}]}}
