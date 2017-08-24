@@ -243,3 +243,4 @@
 {"description": "reject unsupported index operations", "expected_error": true, "id": "index-0242", "input": {"events": [{"document": {"category": "reference", "title": "Sample 242"}, "id": "doc-242", "op": "merge", "version": 1}]}}
 {"description": "reject non-object document payloads", "expected_error": true, "id": "index-0243", "input": {"events": [{"document": "not-an-object", "id": "doc-243", "op": "upsert", "version": 1}]}}
 {"description": "reject blank document identifiers", "expected_error": true, "id": "index-0244", "input": {"events": [{"document": {"category": "reference", "title": "Sample 244"}, "id": " ", "op": "upsert", "version": 1}]}}
+{"description": "reject unexpected payloads on delete events", "expected_error": true, "id": "index-0245", "input": {"events": [{"document": {"category": "reference", "title": "Sample 245"}, "id": "doc-245", "op": "delete", "version": 1}]}}
