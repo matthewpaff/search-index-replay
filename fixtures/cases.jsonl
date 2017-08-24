@@ -242,3 +242,4 @@
 {"description": "reject zero-valued document versions", "expected_error": true, "id": "index-0241", "input": {"events": [{"document": {"category": "reference", "title": "Sample 241"}, "id": "doc-241", "op": "upsert", "version": 0}]}}
 {"description": "reject unsupported index operations", "expected_error": true, "id": "index-0242", "input": {"events": [{"document": {"category": "reference", "title": "Sample 242"}, "id": "doc-242", "op": "merge", "version": 1}]}}
 {"description": "reject non-object document payloads", "expected_error": true, "id": "index-0243", "input": {"events": [{"document": "not-an-object", "id": "doc-243", "op": "upsert", "version": 1}]}}
+{"description": "reject blank document identifiers", "expected_error": true, "id": "index-0244", "input": {"events": [{"document": {"category": "reference", "title": "Sample 244"}, "id": " ", "op": "upsert", "version": 1}]}}
