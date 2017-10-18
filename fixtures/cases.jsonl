@@ -301,3 +301,4 @@
 {"description": "reject booleans as document versions", "expected_error": true, "id": "index-0300", "input": {"events": [{"document": {"category": "reference", "title": "Sample 300"}, "id": "doc-300", "op": "upsert", "version": true}]}}
 {"description": "reject zero-valued document versions", "expected_error": true, "id": "index-0301", "input": {"events": [{"document": {"category": "reference", "title": "Sample 301"}, "id": "doc-301", "op": "upsert", "version": 0}]}}
 {"description": "reject unsupported index operations", "expected_error": true, "id": "index-0302", "input": {"events": [{"document": {"category": "reference", "title": "Sample 302"}, "id": "doc-302", "op": "merge", "version": 1}]}}
+{"description": "reject non-object document payloads", "expected_error": true, "id": "index-0303", "input": {"events": [{"document": "not-an-object", "id": "doc-303", "op": "upsert", "version": 1}]}}
