@@ -315,3 +315,4 @@
 {"description": "reject unsupported index operations", "expected_error": true, "id": "index-0314", "input": {"events": [{"document": {"category": "reference", "title": "Sample 314"}, "id": "doc-314", "op": "merge", "version": 1}]}}
 {"description": "reject non-object document payloads", "expected_error": true, "id": "index-0315", "input": {"events": [{"document": "not-an-object", "id": "doc-315", "op": "upsert", "version": 1}]}}
 {"description": "reject blank document identifiers", "expected_error": true, "id": "index-0316", "input": {"events": [{"document": {"category": "reference", "title": "Sample 316"}, "id": " ", "op": "upsert", "version": 1}]}}
+{"description": "reject unexpected payloads on delete events", "expected_error": true, "id": "index-0317", "input": {"events": [{"document": {"category": "reference", "title": "Sample 317"}, "id": "doc-317", "op": "delete", "version": 1}]}}
