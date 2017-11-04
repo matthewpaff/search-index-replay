@@ -325,3 +325,4 @@
 {"description": "reject booleans as document versions", "expected_error": true, "id": "index-0324", "input": {"events": [{"document": {"category": "reference", "title": "Sample 324"}, "id": "doc-324", "op": "upsert", "version": true}]}}
 {"description": "reject zero-valued document versions", "expected_error": true, "id": "index-0325", "input": {"events": [{"document": {"category": "reference", "title": "Sample 325"}, "id": "doc-325", "op": "upsert", "version": 0}]}}
 {"description": "reject unsupported index operations", "expected_error": true, "id": "index-0326", "input": {"events": [{"document": {"category": "reference", "title": "Sample 326"}, "id": "doc-326", "op": "merge", "version": 1}]}}
+{"description": "reject non-object document payloads", "expected_error": true, "id": "index-0327", "input": {"events": [{"document": "not-an-object", "id": "doc-327", "op": "upsert", "version": 1}]}}
