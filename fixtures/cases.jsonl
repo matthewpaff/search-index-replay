@@ -328,3 +328,4 @@
 {"description": "reject non-object document payloads", "expected_error": true, "id": "index-0327", "input": {"events": [{"document": "not-an-object", "id": "doc-327", "op": "upsert", "version": 1}]}}
 {"description": "reject blank document identifiers", "expected_error": true, "id": "index-0328", "input": {"events": [{"document": {"category": "reference", "title": "Sample 328"}, "id": " ", "op": "upsert", "version": 1}]}}
 {"description": "reject unexpected payloads on delete events", "expected_error": true, "id": "index-0329", "input": {"events": [{"document": {"category": "reference", "title": "Sample 329"}, "id": "doc-329", "op": "delete", "version": 1}]}}
+{"description": "replay an empty index event collection", "expected": {"documents": [], "results": [], "versions": []}, "id": "index-0330", "input": {"events": []}}
