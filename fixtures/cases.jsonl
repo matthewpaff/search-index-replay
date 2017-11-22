@@ -339,3 +339,4 @@
 {"description": "reject unsupported index operations", "expected_error": true, "id": "index-0338", "input": {"events": [{"document": {"category": "reference", "title": "Sample 338"}, "id": "doc-338", "op": "merge", "version": 1}]}}
 {"description": "reject non-object document payloads", "expected_error": true, "id": "index-0339", "input": {"events": [{"document": "not-an-object", "id": "doc-339", "op": "upsert", "version": 1}]}}
 {"description": "reject blank document identifiers", "expected_error": true, "id": "index-0340", "input": {"events": [{"document": {"category": "reference", "title": "Sample 340"}, "id": " ", "op": "upsert", "version": 1}]}}
+{"description": "reject unexpected payloads on delete events", "expected_error": true, "id": "index-0341", "input": {"events": [{"document": {"category": "reference", "title": "Sample 341"}, "id": "doc-341", "op": "delete", "version": 1}]}}
